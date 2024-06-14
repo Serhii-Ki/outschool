@@ -3,11 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500..600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Outschool</title>
   </head>
   <body>
+  <section class="bg-heroGradient">
+    <header class="mx-auto max-w-[1336px] flex justify-between pt-[35px]">
+      <!--LOGO-->
+      <a href="#">
+        <img src="src/assets/icons/logo.svg">
+      </a>
 
+      <!--Menu Desktop-->
+      <nav>
+        <ul class="flex items-center gap-[30px]">
+          <li>
+            <a
+                href="#"
+                class="font-medium text-[15px] leading-[22px] text-white relative after:absolute after:h-[1px] after:w-full after:left-0 after:-bottom-1 after:bg-white after:scale-0 hover:after:scale-100 after:transition-transform">
+              Courses
+            </a>
+          </li>
+          <li>
+            <a
+                href="#"
+                class="font-medium text-[15px] leading-[22px] text-white relative after:absolute after:h-[1px] after:w-full after:left-0 after:-bottom-1 after:bg-white after:scale-0 hover:after:scale-100 after:transition-transform">
+              Pricing
+            </a>
+          </li>
+          <li>
+            <a
+                href="#"
+                class="font-medium text-[15px] leading-[22px] text-white relative after:absolute after:h-[1px] after:w-full after:left-0 after:-bottom-1 after:bg-white after:scale-0 hover:after:scale-100 after:transition-transform">
+              About Us
+            </a>
+          </li>
+          <li>
+            <a
+                href="#"
+                class="font-medium text-[15px] leading-[22px] text-white relative after:absolute after:h-[1px] after:w-full after:left-0 after:-bottom-1 after:bg-white after:scale-0 hover:after:scale-100 after:transition-transform">
+              Contact Us
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!--Actions-->
+      <div class="actions">
+        <a href="#">
+          <img src="./src/assets/icons/account.svg" alt="account icon">
+          <span>Account</span>
+        </a>
+        <a href="#">
+          <img src="./src/assets/icons/cart.svg" alt="cart icon">
+          <span>Cart</span>
+        </a>
+      </div>
+
+    </header>
+  </section>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
