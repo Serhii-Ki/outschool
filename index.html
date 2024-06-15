@@ -11,15 +11,18 @@
     <title>Outschool</title>
   </head>
   <body>
-  <section class="bg-heroGradient">
-    <header class="mx-auto max-w-[1336px] flex justify-between pt-[35px]">
+  <!--Header section-->
+  <section class="bg-heroGradient rounded-br-[180px]">
+
+    <!--Header-->
+    <header class="mx-auto max-w-[1336px] flex justify-between pt-[35px] lg:px-5 sm:pt-5">
       <!--LOGO-->
-      <a href="#">
-        <img src="src/assets/icons/logo.svg">
+      <a href="#" class="z-[1]">
+        <img src="src/assets/icons/logo.svg" alt="logo">
       </a>
 
       <!--Menu Desktop-->
-      <nav>
+      <nav class="sm:hidden">
         <ul class="flex items-center gap-[30px]">
           <li>
             <a
@@ -52,20 +55,85 @@
         </ul>
       </nav>
 
+      <!--Mobile Menu-->
+      <nav
+          id="mobile-menu"
+          class="fixed left-0 top-0 right-0 bottom-0 items-center justify-center bg-heroGradient hidden">
+        <ul class="flex flex-col gap-5 items-center">
+          <li>
+            <a href="#" class="text-white text-xl">Courses</a>
+          </li>
+          <li>
+            <a href="#" class="text-white text-xl">Pricing</a>
+          </li>
+          <li>
+            <a href="#" class="text-white text-xl">About Us</a>
+          </li>
+          <li>
+            <a href="#" class="text-white text-xl">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+
       <!--Actions-->
-      <div class="actions">
-        <a href="#">
+      <div class="flex items-center gap-[30px] md:hidden">
+        <a href="#" class="flex items-center gap-1">
           <img src="./src/assets/icons/account.svg" alt="account icon">
-          <span>Account</span>
+          <span class="font-medium text-[15px] leading-[22px] text-white">Account</span>
         </a>
-        <a href="#">
+        <a href="#" class="flex items-center gap-1">
           <img src="./src/assets/icons/cart.svg" alt="cart icon">
-          <span>Cart</span>
+          <span class="font-medium text-[15px] leading-[22px] text-white">Cart</span>
         </a>
       </div>
 
+      <!--Burger menu-->
+      <button id="burger" class="group hidden relative h-5 w-[30px] sm:block">
+        <span
+            class="absolute bg-white h-[1px] w-full top-0 left-0 group-[.active]:translate-y-2 group-[.active]:rotate-45 transition-transform">
+        </span>
+        <span
+            class="absolute bg-white h-[1px] w-full left-0 group-[.active]:opacity-0 transition-opacity">
+        </span>
+        <span
+            class="absolute bg-white h-[1px] w-full bottom-0 left-0 group-[.active]:-translate-y-[11px] group-[.active]:-rotate-45 transition-transform">
+        </span>
+      </button>
+
     </header>
+
+    <!--Hero section-->
+    <section>
+      <div class="grid grid-cols-2 mx-auto max-w-[1250px] pt-[60px] pb-[100px] items-center lg:px-5 lg:pt-[30px] lg:pb-20 sm:grid-cols-1 sm:pt-10">
+        <div>
+          <h1 class="text-white font-bold text-[60px] leading-normal lg:text-5xl lg:leading-normal md:text-4xl md:leading-normal sm:text-3xl sm:leading-xl">Upgrade YOUR skills for better future</h1>
+          <p class="text-white mt-5 text-[22px] leading-normal lg:text-xl md:text-lg sm:text-base sm:mt-4">Lorem ipsum dolor sit amet consectetur. Erat in commodo in a. Sit interdum mi felis laoreet sagittis. </p>
+
+          <div class="flex items-center mt-[30px] gap-5 sm:grid sm:grid-cols-2 sm:mt-4 xs:grid-cols-1">
+            <a href="#" class="sm:w-full sm:flex sm:justify-center py-[10px] px-6 bg-[#FF00C7] hover:bg-[#cd03a1] transition-colors rounded-xl text-white font-semibold">Check Courses</a>
+            <a href="#" class="sm:w-full sm:flex sm:justify-center py-[9px] px-[22px] rounded-xl hover:bg-[#FF00C7] transition-colors text-white font-medium bg-transparent border border-white">Learn more</a>
+          </div>
+        </div>
+        <div>
+          <img src="src/assets/image/header-img.png" alt="hero image">
+        </div>
+      </div>
+    </section>
+
   </section>
+
+  <!-- Section company partner -->
+  <section class="pt-10 pb-20">
+    <div class="max-w-[1073px] mx-auto">
+      <h2 class="text-[40px] font-semibold leading-[60px] text-center text-[#464747]">
+        Our Company and Partners
+      </h2>
+      <div class="grid grid-cols-5">
+        <div></div>
+      </div>
+    </div>
+  </section>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
