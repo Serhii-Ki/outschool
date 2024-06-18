@@ -21,3 +21,11 @@ function toggleMenu() {
 }
 
 toggleMenu();
+
+//tabs
+
+function toggleTabs() {
+
+}
+
+toggleTabs();

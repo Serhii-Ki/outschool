@@ -12,10 +12,10 @@
   </head>
   <body>
   <!--Header section-->
-  <section class="bg-heroGradient rounded-br-[180px]">
+  <section class="bg-heroGradient rounded-br-[180px] px-5">
 
     <!--Header-->
-    <header class="mx-auto max-w-[1336px] flex justify-between pt-[35px] lg:px-5 sm:pt-5">
+    <header class="mx-auto max-w-[1336px] flex justify-between pt-[35px] sm:pt-5">
       <!--LOGO-->
       <a href="#" class="z-[1]">
         <img src="src/assets/icons/logo.svg" alt="logo">
@@ -123,13 +123,200 @@
   </section>
 
   <!-- Section company partner -->
-  <section class="pt-10 pb-20">
+  <section class="pt-10 pb-20 lg:px-5 items-center sm:pb-10">
     <div class="max-w-[1073px] mx-auto">
-      <h2 class="text-[40px] font-semibold leading-[60px] text-center text-[#464747]">
+      <h2 class="text-[40px] font-semibold leading-[60px] text-center text-[#464747] md:text-3xl sm:text-2xl">
         Our Company and Partners
       </h2>
-      <div class="grid grid-cols-5">
-        <div></div>
+      <div class="grid grid-cols-5 gap-[100px] items-center mt-10 lg:gap-10 md:grid-cols-3 sm:grid-cols-2 sm:gap-6 xs:grid-cols-1">
+        <div class="flex justify-center">
+          <img src="src/assets/icons/company/microsoft.svg" alt="microsoft">
+        </div>
+        <div class="flex justify-center">
+          <img src="src/assets/icons/company/treehouse.svg" alt="treehouse">
+        </div>
+        <div class="flex justify-center">
+          <img src="src/assets/icons/company/amazon.svg" alt="microsoft">
+        </div>
+        <div class="flex justify-center">
+          <img src="src/assets/icons/company/slack.svg" alt="slack">
+        </div>
+        <div class="flex justify-center">
+          <img src="src/assets/icons/company/google.svg" alt="google">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our courses -->
+  <section class="py-20 px-10 sm:py-10">
+    <div class="max-w-[1168px] mx-auto">
+      <h2 class="section-title">
+        Our Courses
+      </h2>
+
+      <!--Tabs-->
+      <div>
+
+        <div class="flex gap-10 text-lg text-[#787878] mt-[30px] md:flex-wrap md:gap-5 sm:justify-center">
+          <button class="tab-trigger active flex">Top Rated</button>
+          <button class="tab-trigger flex">Development</button>
+          <button class="tab-trigger flex">Design</button>
+          <button class="tab-trigger flex">Music</button>
+          <button class="tab-trigger flex">Marketing</button>
+          <button class="tab-trigger flex">Business</button>
+          <button class="tab-trigger flex">Photography</button>
+        </div>
+
+        <!--Cards-->
+        <div class="grid grid-cols-4 mt-10 gap-5 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+
+          <div class="tab-content shadow-[0px_0px_9px_0px_#99999740] rounded-xl">
+            <div class="rounded-xl overflow-hidden">
+              <img class="max-w-full w-full h-auto" src="src/assets/image/courses/card1.png" alt="courses">
+            </div>
+            <div class="py-[18px] px-5">
+              <span class="text-lightgray py-2 px-4 bg-[#EAEAEA] rounded-md">Artificial Intelligence</span>
+              <h3 class="font-semibold mt-4 text-[15px] leading-[22px] tracking-[-0.002em]">Modern Artificial Intelligence with zero coding</h3>
+              <p class="mt-1 text-base">Jhon David</p>
+              <img class="block my-2" src="src/assets/icons/rating.svg" alt="rating">
+              <div class="flex justify-between">
+                <span class="text-blueviolet uppercase font-bold tracking-[-0.002em]">$ 49.99</span>
+                <a href="#" class="text-blueviolet py-[6px] px-[18px] rounded-md text-xs font-semibold border border-blueviolet hover:bg-blueviolet hover:text-white transition-colors">
+                  Buy now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content shadow-[0px_0px_9px_0px_#99999740] rounded-xl">
+            <div class="rounded-xl overflow-hidden">
+              <img class="max-w-full w-full h-auto" src="src/assets/image/courses/card2.png" alt="courses">
+            </div>
+            <div class="py-[18px] px-5">
+              <span class="text-lightgray py-2 px-4 bg-[#EAEAEA] rounded-md">UX/UI Designing</span>
+              <h3 class="font-semibold mt-4 text-[15px] leading-[22px] tracking-[-0.002em]">Figma UX/UI Design essentials to beginner</h3>
+              <p class="mt-1 text-base">Daniel Walter Scott</p>
+              <img class="block my-2" src="src/assets/icons/rating.svg" alt="rating">
+              <div class="flex justify-between">
+                <span class="text-blueviolet uppercase font-bold tracking-[-0.002em]">$ 49.99</span>
+                <a href="#" class="text-blueviolet py-[6px] px-[18px] rounded-md text-xs font-semibold border border-blueviolet hover:bg-blueviolet hover:text-white transition-colors">
+                  Buy now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content shadow-[0px_0px_9px_0px_#99999740] rounded-xl">
+            <div class="rounded-xl overflow-hidden">
+              <img class="max-w-full w-full h-auto" src="src/assets/image/courses/card3.png" alt="courses">
+            </div>
+            <div class="py-[18px] px-5">
+              <span class="text-lightgray py-2 px-4 bg-[#EAEAEA] rounded-md">UX/UI Designing</span>
+              <h3 class="font-semibold mt-4 text-[15px] leading-[22px] tracking-[-0.002em]">Complete figma mega course: UX/UI Design Beginner</h3>
+              <p class="mt-1 text-base">Kaleb Kingston</p>
+              <img class="block my-2" src="src/assets/icons/rating.svg" alt="rating">
+              <div class="flex justify-between">
+                <span class="text-blueviolet uppercase font-bold tracking-[-0.002em]">$ 49.99</span>
+                <a href="#" class="text-blueviolet py-[6px] px-[18px] rounded-md text-xs font-semibold border border-blueviolet hover:bg-blueviolet hover:text-white transition-colors">
+                  Buy now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content shadow-[0px_0px_9px_0px_#99999740] rounded-xl">
+            <div class="rounded-xl overflow-hidden">
+              <img class="max-w-full w-full h-auto" src="src/assets/image/courses/card4.png" alt="courses">
+            </div>
+            <div class="py-[18px] px-5">
+              <span class="text-lightgray py-2 px-4 bg-[#EAEAEA] rounded-md">Web Development</span>
+              <h3 class="font-semibold mt-4 text-[15px] leading-[22px] tracking-[-0.002em]">The Complete 2022 Fullstack Web Developer course</h3>
+              <p class="mt-1 text-base">Mark Lassoff</p>
+              <img class="block my-2" src="src/assets/icons/rating.svg" alt="rating">
+              <div class="flex justify-between">
+                <span class="text-blueviolet uppercase font-bold tracking-[-0.002em]">$ 49.99</span>
+                <a href="#" class="text-blueviolet py-[6px] px-[18px] rounded-md text-xs font-semibold border border-blueviolet hover:bg-blueviolet hover:text-white transition-colors">
+                  Buy now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content shadow-[0px_0px_9px_0px_#99999740] rounded-xl">
+            <div class="rounded-xl overflow-hidden">
+              <img class="max-w-full w-full h-auto" src="src/assets/image/courses/card5.png" alt="courses">
+            </div>
+            <div class="py-[18px] px-5">
+              <span class="text-lightgray py-2 px-4 bg-[#EAEAEA] rounded-md">Web Development</span>
+              <h3 class="font-semibold mt-4 text-[15px] leading-[22px] tracking-[-0.002em]">Javascript for beginners Web Developer course</h3>
+              <p class="mt-1 text-base">Jhon David</p>
+              <img class="block my-2" src="src/assets/icons/rating.svg" alt="rating">
+              <div class="flex justify-between">
+                <span class="text-blueviolet uppercase font-bold tracking-[-0.002em]">$ 49.99</span>
+                <a href="#" class="text-blueviolet py-[6px] px-[18px] rounded-md text-xs font-semibold border border-blueviolet hover:bg-blueviolet hover:text-white transition-colors">
+                  Buy now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content shadow-[0px_0px_9px_0px_#99999740] rounded-xl">
+            <div class="rounded-xl overflow-hidden">
+              <img class="max-w-full w-full h-auto" src="src/assets/image/courses/card6.png" alt="courses">
+            </div>
+            <div class="py-[18px] px-5">
+              <span class="text-lightgray py-2 px-4 bg-[#EAEAEA] rounded-md">Digital Marketing</span>
+              <h3 class="font-semibold mt-4 text-[15px] leading-[22px] tracking-[-0.002em]">Digital Advertising and Marketing 101.</h3>
+              <p class="mt-1 text-base">Ben Silverstain</p>
+              <img class="block my-2" src="src/assets/icons/rating.svg" alt="rating">
+              <div class="flex justify-between">
+                <span class="text-blueviolet uppercase font-bold tracking-[-0.002em]">$ 49.99</span>
+                <a href="#" class="text-blueviolet py-[6px] px-[18px] rounded-md text-xs font-semibold border border-blueviolet hover:bg-blueviolet hover:text-white transition-colors">
+                  Buy now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content shadow-[0px_0px_9px_0px_#99999740] rounded-xl">
+            <div class="rounded-xl overflow-hidden">
+              <img class="max-w-full w-full h-auto" src="src/assets/image/courses/card7.png" alt="courses">
+            </div>
+            <div class="py-[18px] px-5">
+              <span class="text-lightgray py-2 px-4 bg-[#EAEAEA] rounded-md">Digital Marketing</span>
+              <h3 class="font-semibold mt-4 text-[15px] leading-[22px] tracking-[-0.002em]">Mega Digital Marketing course: 12 Courses in 1</h3>
+              <p class="mt-1 text-base">Phil Ebiner</p>
+              <img class="block my-2" src="src/assets/icons/rating.svg" alt="rating">
+              <div class="flex justify-between">
+                <span class="text-blueviolet uppercase font-bold tracking-[-0.002em]">$ 49.99</span>
+                <a href="#" class="text-blueviolet py-[6px] px-[18px] rounded-md text-xs font-semibold border border-blueviolet hover:bg-blueviolet hover:text-white transition-colors">
+                  Buy now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content shadow-[0px_0px_9px_0px_#99999740] rounded-xl">
+            <div class="rounded-xl overflow-hidden">
+              <img class="max-w-full w-full h-auto" src="src/assets/image/courses/card8.png" alt="courses">
+            </div>
+            <div class="py-[18px] px-5">
+              <span class="text-lightgray py-2 px-4 bg-[#EAEAEA] rounded-md">UX/UI Designing</span>
+              <h3 class="font-semibold mt-4 text-[15px] leading-[22px] tracking-[-0.002em]">User Experience Design Essentials</h3>
+              <p class="mt-1 text-base">Jacob Murphy</p>
+              <img class="block my-2" src="src/assets/icons/rating.svg" alt="rating">
+              <div class="flex justify-between">
+                <span class="text-blueviolet uppercase font-bold tracking-[-0.002em]">$ 49.99</span>
+                <a href="#" class="text-blueviolet py-[6px] px-[18px] rounded-md text-xs font-semibold border border-blueviolet hover:bg-blueviolet hover:text-white transition-colors">
+                  Buy now
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </div>
   </section>
