@@ -25,7 +25,17 @@ toggleMenu();
 //tabs
 
 function toggleTabs() {
+  const tabs = document.querySelectorAll('.tab-trigger');
+  const tabsContent = document.querySelectorAll('.tab-content');
 
+  tabs.forEach(tab => {
+    tab.addEventListener('click',() => {
+      tabs.forEach(tab => tab.classList.remove('active'));
+      tabsContent.forEach(tabContent => tabContent.classList.remove('active'));
+      tab.classList.add('active');
+      document.querySelector(`#${tab.dataset.target}`).classList.add('active');
+    });
+  });
 }
 
 toggleTabs();

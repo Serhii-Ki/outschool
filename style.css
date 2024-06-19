@@ -16,4 +16,8 @@
   .tab-trigger.active {
     @apply text-blueviolet border-b border-b-blueviolet pb-2;
   }
+
+  .section-text {
+    @apply text-lightgray text-base tracking-[-0.002em];
+  }
 }
